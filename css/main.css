@@ -2188,6 +2188,7 @@ input, select, textarea {
 			display: inline-block;
 			padding: 2.5em 2.5em;
 			border-radius: 5px;
+			
 		}
 
 			#banner header h2 {
@@ -2213,8 +2214,9 @@ input, select, textarea {
 			}
 	
 	.e2a-lines {
-		display: inline-flex;
+		display: flex;
 		flex-direction: column;
+		align-items: center; /* 整体居中 */
 		gap: 0.5em;
 		margin-top: 1em;
 	}
@@ -2254,6 +2256,7 @@ input, select, textarea {
 				white-space: normal;
 		}
 	}
+
 
 /* Intro */
 
@@ -2624,6 +2627,44 @@ input, select, textarea {
 				vertical-align: middle;
 				margin-right: 8px;
 			}
+
+	#copyright ul.links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2em;
+		background: rgba(255, 255, 255, 0.786);
+		border-radius: 5px;
+		color: #000000;
+		margin: 0;
+		padding: 0.85em 2.25em 0.85em 2.25em;
+		flex-wrap: wrap;
+	}
+	#copyright ul.links li {
+		border-left: none;
+		margin: 0;
+		padding: 0;
+	}
+	.school-logo {
+		height: 40px;
+		vertical-align: middle;
+		margin-right: 0;
+	}
+
+	@media screen and (max-width: 736px) {
+		#copyright ul.links {
+			flex-direction: column;
+			align-items: center;
+			padding: 0.85em 0;
+			gap: 0.5em;
+		}
+		#copyright ul.links li {
+			margin: 0.5em 0;
+		}
+		.school-logo {
+			margin-bottom: 0.5em;
+		}
+	}
 
 /* XLarge */
 
